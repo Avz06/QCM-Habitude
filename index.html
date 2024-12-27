@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Se créer une Habitude</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div id="app">
+    <header>
+        <h1 class="animated-title">Créer une habitude</h1>
+    </header>
+
+    <main>
+        <div id="intro-container" class="animate__animated animate__fadeIn">
+            <h2>Analyse de ton Habitude</h2>
+            <input type="text" id="habit-name" placeholder="Nom de l'habitude à analyser">
+            <button id="start-btn" class="glow-button">Commencer l'Analyse </button>
+        </div>
+
+        <div id="quiz-container" style="display: none;">
+            <div id="progress-bar"><div class="progress"></div></div>
+            <div id="question-container"></div>
+            <div id="navigation-buttons">
+                <button id="prev-btn" class="nav-button" style="display: none;">Précédent</button>
+                <button id="next-btn" class="nav-button">Suivant</button>
+                <button id="submit-btn" class="nav-button glow-button" style="display: none;">Finaliser l'Analyse</button>
+            </div>
+        </div>
+
+        <div id="results" style="display: none;"></div>
+    </main>
+</div>
+<div class="banner">
+    <p>Réalisé par <strong>TOI AUSSI TU PEUX…</strong></p>
+</div>
+<script src="script.js"></script>
+
+</body>
+</html>
